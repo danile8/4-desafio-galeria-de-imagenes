@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Card from './components/Card';
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header titulo="Galería de Imágenes con React"/>
+      <Card src="https://toutelaculture.com/wp-content/uploads/2014/06/Chet-Faker-Built-On-Glass-1024x1024.jpg" titulo="Chet Faker" descripcion="Build on glass"/>
+      <Card src="https://i.pinimg.com/originals/f1/cf/12/f1cf12d93b03c007cd50dd6bc2dd3afe.jpg" titulo="Metronomy" descripcion="The English Riviera"/>
+      <Card src="http://www.noise11.com/wp/wp-content/uploads/2015/04/Tame-Impala-Currents.jpg" titulo="Tame Impala" descripcion="Currents"/>
+      <Footer descripcion="Galería de imagenes de mis albunes favoritos"/>
     </div>
+   
   );
 }
 
